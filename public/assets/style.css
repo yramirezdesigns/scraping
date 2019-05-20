@@ -1,0 +1,217 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h4 {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+a {
+  color: #af01ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #ba9eca;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin-right: 40px;
+}
+
+hr {
+  border-color: black;
+}
+p {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.navbar,
+.navbar-inverse,
+.navbar-brand,
+.navbar-nav>li>a {
+  font-family: 'Montserrat', sans-serif;
+  background: #ead8ff;
+  color: #3e2b44 !important;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:active {
+  background: #510094;
+  color: white !important;
+}
+
+.active-page {
+  background-color: white;
+}
+
+
+.mynav {
+  max-height: 40px;
+}
+
+.page-title {
+  font-family: 'Marck Script', cursive;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.active-nav {
+  background: #7e38b7;
+}
+
+.tagline {
+  float: right;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.articleimg {
+  margin-right: 20px;
+  float: left;
+}
+
+.article {
+  font-family: helvetica;
+}
+
+.article-title {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.article- title,
+a {
+  font-size: 20px;
+}
+
+.view-comments {
+  float: right;
+  background-color: #302838;
+  color: #7f86ad;
+  font-size: 30px;
+}
+.view-comments:hover,
+.view-comments:focus {
+  color: white;
+}
+
+.submitbtn {
+  float: right;
+  background: #c399ea;
+  color: #332838;
+}
+
+.submitbtn:hover {
+  color: white;
+  background: #7f86ad;
+}
+
+.news-body {
+  clear: both;
+  margin: auto;
+  width: 100%;
+  padding: 16px;
+
+}
+
+.article-box {
+  background: #283038;
+  color: lightgray;
+  padding: 10px;
+  border: 3px solid #7f86ad;
+  margin-top: 7px;
+  border-radius: 10px;
+}
+
+.comment-section {
+  clear: both;
+  margin-top: 5px;
+  border: 2px solid #283038;
+  border-radius: 10px;
+  width: 95%;
+  margin: auto;
+  background: #d5d0de;
+}
+
+.name-box,
+.comment-box {
+  border-style: none;
+  border: 1px solid #9ea3de;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.comment-box {
+  width: 100%;
+  height: 80px;
+}
+
+.name-box:focus,
+.comment-box:focus {
+  border-color: #c5b0f7;
+	box-shadow: 0px 1px 1px rgba(90,102,236, 0.075) inset, 0px 0px 8px rgba(90,102,236, 0.5);
+	outline: 0;
+}
+
+.comment-text {
+  border: 1px solid #9ea3de;
+  border-radius: 5px;
+  font-style: oblique;
+  padding: 20px;
+  background: white;
+  width: 75%;
+  margin: auto;
+  margin-top:2px;
+}
+
+.create-update-form {
+  width: 75%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.name {
+  color: #7c3fb5;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.glyphicon-trash {
+  color: #7c3fb5;
+  font-size: 20px;
+}
+
+.glyphicon-trash:hover {
+  color: rgb(200, 173, 230);
+}
+.remove-button {
+  border: none;
+  float: right;
+  background: white !important;
+
+}

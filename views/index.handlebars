@@ -1,0 +1,51 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-title" href="/">Scraper</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="mynav">
+        <ul class="nav navbar-nav">
+          <li class="li-latest"><a class="a-latest {{this.latest}}" href="/">News</a></li>
+          <li class="li-archive"><a class="a-archive {{this.archive}}" href="/archive">Archive</a></li>
+          <li><p class="tagline">This site will bring you the news<p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="news-body">
+  {{#each articles}}
+    <div class="row">
+      <div class="col-sm-12 article-box">
+        <div><img class="articleimg" src="{{this.img}}"></div>
+        <div class="article-title"><a href="https://www.nytimes.com/section/nyregion{{this.link}}" target="_blank">{{this.title}}</a></div>
+        <div class="article">{{this.summary}}</div>
+        <button class="btn view-comments" data-id="{{this.title}}" type="submit"><i class="fa fa-comments-o" aria-hidden="true"></i></button>
+      </div>
+      <div class="container comment-section">
+        <div class="row container-fluid panel-body">
+          <h4>Comments</h4>
+          <span id="existing-comments"></span>
+        </div>
+        <div class="row container-fluid panel-body">
+          <form class="create-update-form">
+            <div class="form-group">
+              <input type="text" id="name-box{{this.idnum}}" class="name-box" name="name" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'"/>
+              <input type="text" id="comment-box{{this.idnum}}" class="comment-box" name="comment" placeholder="Share your thoughts here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Share your thoughts here'"/>
+            </div>
+            <button class="btn submitbtn" data-id="{{this.title}}" type="submit" data-idnum="{{this.idnum}}">Post</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  {{/each}}
+</div>
